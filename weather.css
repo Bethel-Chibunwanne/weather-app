@@ -5,7 +5,7 @@
     --input-bg : rgba(255, 255, 255, 0.2);
     --card-bg : rgba(255, 255, 255, 0.15);
     --blur : blur(10px);
-    --bg-image : url('Images/sea_bright.png');
+    --bg-image : url('sea_bright.png');
 }
 *{
     touch-action: manipulation;

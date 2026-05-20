@@ -185,7 +185,7 @@ try {
         // body.classList.add('clear');
         // body.style.color = 'green';
         
-        body.style.backgroundImage = "url('Images/sea_bright.png')"
+        body.style.backgroundImage = "url('sea_bright.png')"
         
         weather_icon.innerHTML = `
 
@@ -286,7 +286,7 @@ try {
         console.log('The weather is Cloudy');
         body.classList.add('cloudy');
         // body.style.color = 'blue';
-        body.style.backgroundImage = "url('Images/sea_cloudy.png')";
+        body.style.backgroundImage = "url('sea_cloudy.png')";
             weather_icon.innerHTML = `
 
     <svg width="120" height="120" viewBox="0 0 120 120"
@@ -318,7 +318,7 @@ try {
         console.log('Its a raining weather');
         body.classList.add('rain');
         // body.style.color = 'purple';
-        body.style.backgroundImage = "url('Images/sea_rain.png')";
+        body.style.backgroundImage = "url('sea_rain.png')";
          weather_icon.innerHTML = `
 
     <svg width="120" height="120" viewBox="0 0 120 120"
@@ -377,7 +377,7 @@ try {
         console.log('Its a stormy weather');
         body.classList.add('storm');
         // body.style.color = 'red';
-        body.style.backgroundImage = "url('Images/sea_storm.png')";
+        body.style.backgroundImage = "url('sea_storm.png')";
          weather_icon.innerHTML = `
 
     <svg width="120" height="120" viewBox="0 0 120 120"
@@ -409,7 +409,7 @@ try {
     }
     else{
         // body.classList.add('dark')
-        body.style.backgroundImage = "url('Images/sea_dark.png')";
+        body.style.backgroundImage = "url('sea_dark.png')";
             weather_icon.innerHTML = `
 
     <svg width="120" height="120" viewBox="0 0 120 120"
