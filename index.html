@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="top">
+        <h2 class="name">Weather app <svg width="100" height="100" viewBox="0 0 64 48" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="sunGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF176"/>
+      <stop offset="100%" stop-color="#FDB813"/>
+    </radialGradient>
+
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#dfe9f3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sun -->
+  <circle cx="46" cy="18" r="10" fill="url(#sunGradient)"/>
+
+  <!-- Rays (with gap from sun) -->
+  <g stroke="#FFD54F" stroke-width="2" stroke-linecap="round" opacity="0.8">
+    <!-- top -->
+    <line x1="46" y1="0" x2="46" y2="6"/>
+    <!-- bottom -->
+    <line x1="46" y1="30" x2="46" y2="36"/>
+    <!-- left -->
+    <line x1="28" y1="18" x2="34" y2="18"/>
+    <!-- right -->
+    <line x1="58" y1="18" x2="64" y2="18"/>
+    
+    <!-- diagonals -->
+    <line x1="34" y1="6" x2="38" y2="10"/>
+    <line x1="54" y1="26" x2="58" y2="30"/>
+    <line x1="34" y1="30" x2="38" y2="26"/>
+    <line x1="54" y1="10" x2="58" y2="6"/>
+  </g>
+
+  <!-- Cloud -->
+  <path d="M20 46h26a9 9 0 0 0 0-18c-1.2 0-2.3.2-3.3.6A13 13 0 0 0 18 32a7 7 0 0 0 2 14z"
+        fill="url(#cloudGradient)"/>
+
+</svg></h2>
+        <p>Get real-time weather update</p>
+    </div>
+    <div class="search_area">
+        <span><i class="fa-solid fa-location-dot"></i></span>
+        <input type="text" class="" placeholder=" Enter city name..."/>
+        <p id="search_btn"><i class="fa-solid fa-magnifying-glass"></i> Search</p>
+    </div>
+    <div class="weather_container">
+        <div class="left">
+            <p id="City_name">City</p>
+            <p id="Country_name">Country</p>
+            <p id="dates">West african time</p>
+        </div>
+        <div class="middleBox">
+    
+            <div id="loading"></div>
+<div class="middle">
+    <svg viewBox="20 20 80 80"
+    xmlns="http://www.w3.org/2000/svg">
+
+        <circle
+            cx="60"
+            cy="60"
+            r="28"
+            fill="#FFD54F"
+        />
+
+    </svg>
+    </div>
+    
+
+        </div>
+        <div class="right">
+        <p id="Temperature">°C</p>
+        <p id="weather_status">Status</p>
+    </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="weather_display">
+    <div style="border-top-left-radius: 20px;">
+        <p id=""><i class="fa-solid fa-temperature-half"></i> Feels like</p>
+        <p id="Feeling">-</p>
+    </div>
+    
+    <div>
+        <p id=""><i class="fa-solid fa-droplet"></i> Humidity</p>
+        <p id="Humidity">-</p>
+    </div>
+    
+    <div>
+        <p id=""><i class="fa-solid fa-wind"></i> Wind</p>
+        <p id="Wind">-</p>
+    </div>
+    
+    <div style="border-top-right-radius: 20px;">
+        <p id=""><i class="fa-solid fa-eye"></i> Visibility</p>
+        <p id="Visibility">-</p>
+    </div>
+    
+    <div style="border-bottom-left-radius: 20px;">
+        <p id=""><i class="fa-solid fa-gauge-high"></i> Pressure</p>
+        <p id="Pressure">-</p>
+    </div>
+    
+    <div>
+        <p id=""><i class="fa-solid fa-sun"></i> Sunrise</p>
+        <p id="Sunrise">-</p>
+    </div>
+    
+    <div>
+        <p id=""><i class="fa-solid fa-moon"></i> Sunset</p>
+        <p id="Sunset">-</p>
+    </div>
+    
+    <div style="border-bottom-right-radius: 20px;">
+        <p id=""><i class="fa-solid fa-cloud"></i> Cloud</p>
+        <p id="Cloud">-</p>
+    </div>
+    
+</div>
+    <div id="update">
+        <i class="fa-solid fa-rotate" ></i> Last updated: May 17, 2026 07:30 AM
+    </div>
+
+    <div id="err_info"></div>
+
+<script src="weather.js"></script>
+</body>
+</html> 
